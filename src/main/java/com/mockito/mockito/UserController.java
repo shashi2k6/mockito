@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     @Autowired
-    private Userservice userservice;
+    private UserService userService;
 
     @RequestMapping("/hello")
     public ResponseEntity addUser() {
-        User user = userservice.addUser(new User("shashi"));
+        User user = userService.addUser(new User("shashi"));
         System.out.println(user);
         return new ResponseEntity("Hello", HttpStatus.OK);
     }
