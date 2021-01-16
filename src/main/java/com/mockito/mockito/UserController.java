@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class Usercontroller {
+public class UserController {
 
     @Autowired
-    Userservice userservice;
+    private Userservice userservice;
 
     @RequestMapping("/hello")
     public ResponseEntity addUser() {

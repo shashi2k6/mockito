@@ -4,12 +4,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class Userservice {
+public class UserService {
 
     @Autowired
-    Userrepo userrepo;
+    private UserRepository UserRepository;
 
     public User addUser(User user) {
-        return userrepo.save(user);
+        return UserRepository.save(user);
     }
 }

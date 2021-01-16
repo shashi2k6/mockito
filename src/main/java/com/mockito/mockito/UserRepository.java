@@ -5,5 +5,5 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface Userrepo extends JpaRepository<User,Integer> {
+public interface UserRepository extends JpaRepository<User,Integer> {
 }
