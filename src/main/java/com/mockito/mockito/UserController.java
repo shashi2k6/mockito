@@ -15,7 +15,7 @@ public class UserController {
     @RequestMapping("/hello")
     public ResponseEntity addUser() {
         User user = userservice.addUser(new User("shashi"));
-       System.out.println(user);
+        System.out.println(user);
         return new ResponseEntity("Hello", HttpStatus.OK);
     }
 }
